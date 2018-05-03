@@ -777,7 +777,7 @@
 				TargetAttributes = {
 					94B915F61EF21E4A00AC91B9 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = R2U8SE68WE;
+						DevelopmentTeam = 85V2HR3488;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -1157,12 +1157,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = R2U8SE68WE;
+				DEVELOPMENT_TEAM = 85V2HR3488;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/TodayNews/Classes/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhmm.xhgj;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zailing.Lift-Wuye";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1182,12 +1182,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = R2U8SE68WE;
+				DEVELOPMENT_TEAM = 85V2HR3488;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/TodayNews/Classes/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhmm.xhgj;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zailing.Lift-Wuye";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
