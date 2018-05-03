@@ -1,0 +1,64 @@
+
+
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    cocoapods
+    # cocoapods
+  end
+ 
+
+#打出AdHoc包，上传到蒲公英
+  lane :uploadAdHoc do
+  gym(
+    scheme: "WQCocoaPodsTest",
+    clean: true, # 在构建前先clean
+    configuration: "Release",  # 配置为Release版本
+    export_method:"ad-hoc",
+    #自动获取当前app版本号，并补充当前编译时间为后缀
+    #output_name: "WQCocoaPodsTest_#{get_version_number}.ipa" , # ipa 文件名
+    output_name: "AdHoc_#{get_version_number}_#{Time.new.strftime("%m%d")}.ipa" , # ipa 文件名
+    output_directory:"/Users/wangqiang/Desktop/Fastlane打包/ipa/WQCocoaPodsTest", # ipa导出目录
+    export_options: { 
+      #xcode9一定要加入export_options，配置bundleId和证书名键值对
+      provisioningProfiles: { 
+        "com.xhtechcenter.xhnewinter" => "xhnewinter_Ad_Hoc",
+      }
+    }
+  )
+  pgyer(api_key: "a3f28f3d8fa4c0d31686b8f2996585b1", user_key: "1489d5bb77d5984f56e75e3541ea3a41")
+end
+
+
+#打出正式包，上传到iTunes Connect
+  lane :uploadAppstore do
+  gym(
+    output_name: "AppStore",
+    scheme: "WQCocoaPodsTest",
+    clean:true, # 在构建前先clean
+    configuration: "Release",  # 配置为Release版本
+    export_method: "app-store",
+    output_directory:"~/Documents/ipa"
+  )
+  appstore       # 上传你的App iTunes Connect
+  end
+
+
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end

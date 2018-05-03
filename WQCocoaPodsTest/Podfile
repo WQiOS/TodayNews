@@ -1,0 +1,14 @@
+
+#官方Cocoapods的源
+source 'https://github.com/CocoaPods/Specs.git'
+#本地私有源
+source 'http://10.0.0.210/XYCocoaPods/XYSpecs'
+
+platform :ios,'8.0'
+
+target 'WQCocoaPodsTest' do
+
+    pod 'XYRoundedCorner'
+    pod 'WQCategory'
+
+end
