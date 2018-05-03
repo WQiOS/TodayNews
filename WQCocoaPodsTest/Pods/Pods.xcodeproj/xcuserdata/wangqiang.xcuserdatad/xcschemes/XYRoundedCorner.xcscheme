@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F27410E9E1488FED55FAC10117308F71'
+               BlueprintIdentifier = 'F51DF8C8442C7AB278787EE183F9C704'
                BlueprintName = 'XYRoundedCorner'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXYRoundedCorner.a'>

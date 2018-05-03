@@ -10,5 +10,6 @@ target 'WQCocoaPodsTest' do
 
     pod 'XYRoundedCorner'
     pod 'WQCategory'
+    pod 'WQRoundedCorner'
 
 end

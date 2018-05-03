@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '801C5C899B4CBB0841BEC9126FF0A02E'
-               BlueprintName = 'Pods-WQCocoaPodsTest'
+               BlueprintIdentifier = '31DE40D2189F3305DB0B7F7788F8EBAB'
+               BlueprintName = 'WQRoundedCorner'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-WQCocoaPodsTest.a'>
+               BuildableName = 'libWQRoundedCorner.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

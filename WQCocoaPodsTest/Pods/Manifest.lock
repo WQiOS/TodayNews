@@ -3,18 +3,22 @@ PODS:
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
   - WQCategory (0.0.4)
+  - WQRoundedCorner (0.0.1):
+    - SDWebImage
   - XYRoundedCorner (0.0.2):
     - SDWebImage
 
 DEPENDENCIES:
   - WQCategory
+  - WQRoundedCorner
   - XYRoundedCorner
 
 SPEC CHECKSUMS:
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   WQCategory: e7c9912a189f87132a5a46d3fdc9851350e797d2
+  WQRoundedCorner: 12dd0de3cfc200c69276c959af96379f21bfdc6b
   XYRoundedCorner: 0a214ba1621d52968842059517ee4bcf0d94d1f5
 
-PODFILE CHECKSUM: a414f730c22d887ac762ff742b6dbd88b6805806
+PODFILE CHECKSUM: 9e5700ea9f4d19e586c58d3dd896b241cfcda780
 
 COCOAPODS: 1.3.1
