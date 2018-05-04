@@ -8,7 +8,7 @@
 
 #import "TableViewCell.h"
 #import "WQRoundedCorner.h"
-#import "XYRoundedCorner.h"
+#import "WQRoundedCorner.h"
 
 @interface TableViewCell ()
 
@@ -52,8 +52,8 @@
 }
 
 - (void)setAvatarURL:(NSURL *)avatarURL {
-    [_avatarView xySetShadowColor:[UIColor redColor] shadowOffset:CGSizeZero opacity:0.2 radius:2 shadowHeight:5];
-    [_avatarView xySetCornerXYRadius:XYRadiusMake(20, 20, 20, 20) imageURL:_avatarURL placeholder:[UIImage imageNamed:@"avatar"] size:CGSizeMake(40, 40)];
+    [_avatarView setShadowColor:[UIColor redColor] shadowOffset:CGSizeZero opacity:0.2 radius:2 shadowHeight:5];
+    [_avatarView setCornerWQRadius:WQRadiusMake(20, 20, 20, 20) imageURL:_avatarURL placeholder:[UIImage imageNamed:@"avatar"] size:CGSizeMake(40, 40)];
 }
 
 + (NSString *)cellReuseIdentifier {

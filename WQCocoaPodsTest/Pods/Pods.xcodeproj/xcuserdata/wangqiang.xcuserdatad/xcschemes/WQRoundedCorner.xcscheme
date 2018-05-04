@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '31DE40D2189F3305DB0B7F7788F8EBAB'
+               BlueprintIdentifier = '8F3BB7530EC954AC451754C7687FBE8E'
                BlueprintName = 'WQRoundedCorner'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWQRoundedCorner.a'>

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 //#import <MJExtension/MJExtension.h>
 //#import "MJExtension.h"
-#import "XYRoundedCorner.h"
+//#import "XYRoundedCorner.h"
 #import "TableViewCell.h"
 #import "UIViewController+viewDidLoad.h"
 
